@@ -1,0 +1,10 @@
+
+ <div ng-hide="news_list" class="loader">
+ </div>
+ <div class="container" ng-repeat="news in news_list">
+ 	<div class="news">
+		<h1> {{news.title}}<td>
+		<h5 ng-bind-html="news.description"></h5>
+		<a class="btn btn-default" href="{{news.link}}" role="button"> Read More </a>
+	</div>
+ </div>
